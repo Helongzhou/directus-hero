@@ -1,0 +1,1 @@
+"use strict";module.exports=({filter:e,action:t,init:o,schedule:l},{exceptions:c})=>{const{InvalidPayloadException:s}=c;e("items.create",(async e=>{if(""===e.title)throw new s("Title cannot be empty");return e})),t("items.create",(()=>{console.log("Item created!")})),o("startup",(()=>{console.log("Directus started!")})),l("* * * * *",(()=>{console.log("Hello world!")}))};

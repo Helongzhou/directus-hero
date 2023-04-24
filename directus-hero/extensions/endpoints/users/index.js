@@ -1,0 +1,1 @@
+"use strict";module.exports=(e,{services:s,exceptions:c})=>{const{ItemsService:t}=s,{ServiceUnavailableException:i}=c;e.get("/",((e,s,c)=>{new t("users",{schema:e.schema,accountability:e.accountability}).readByQuery({sort:["id"],fields:["*"]}).then((e=>s.json(e))).catch((e=>c(new i(e.message))))}))};

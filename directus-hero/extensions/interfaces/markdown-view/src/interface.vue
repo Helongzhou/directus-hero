@@ -11,7 +11,6 @@
 <script>
 
 export default {
-	inheritAttrs: false,
 	props: {
 		value: {
 			type: String,
@@ -23,7 +22,6 @@ export default {
 		}
 	},
 	setup(props, { emit, attrs, listeners }) {
-		console.log(props)
 		return { attrs, listeners};
 	},
 };

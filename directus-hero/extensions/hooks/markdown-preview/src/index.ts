@@ -7,7 +7,7 @@ export default defineHook(({ filter, action }, { exceptions }) => {
     'guide.items.read',
     (input, { collection }, { schema, database, accountability }) => {
       if (!Array.isArray(input)) return
-	  if (accountability.admin) return
+	  if (accountability?.admin) return
       //在哪里定义dataMap?
       const dataMap: Record<string, string> = {
         email: 'hello@example.com',

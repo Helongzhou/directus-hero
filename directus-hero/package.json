@@ -12,7 +12,7 @@
   "dependencies": {
     "create-directus-extension": "^9.25.2",
     "directus": "^9.25.2",
-    "global": "^4.4.0",
+    "directus-extension-computed-interface": "^1.5.0",
     "sqlite3": "^5.1.6"
   }
 }
